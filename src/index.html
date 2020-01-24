@@ -27,19 +27,19 @@
             </div>
         </section>
         <section class="login sign-login-section section flex">
-            <div  class="login-wrap flex">
+            <div id="mainFormWrap" class="login-wrap flex">
                 <h1 class="login-title login-item">Welcome back</h1>
                 <span class="login-subtitle login-item base-color">Sign in to continue to IO Technologies.</span>
                 <div class="login-form-wrap">
-                    <form action="">
+                    <form id="mainForm" action="/#" method="post">
                         <div class="form-login-wrap flex">
-                            <input type="email" class="form-input login-item" autocomplete="off"
+                            <input type="email" id="email-input" class="form-input login-item" onfocus="this.removeAttribute('readonly');" readonly autocomplete="off"
                                    aria-describedby="emailHelp"
                                    placeholder="Email address">
-                            <input type="password" class="form-input login-item" id="exampleInputPassword1"
+                            <input type="password" id="pass-input" class="form-input login-item"
                                    autocomplete="off"
                                    placeholder="Password">
-                            <button type="submit" class="btn login-btn login-item">LOG in
+                            <button type="submit" id="btnSubmit" class="btn login-btn login-item">LOG in
                                 <i class="login-arrow-right">
                                     <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -55,14 +55,14 @@
                                 </i>
                             </button>
                             <span class="login-reset_pass login-item base-color">
-                        Forgot your password? <span class="login-btn-reset btn">Reset</span>
+                        Forgot your password? <span id="btnResetPass" class="login-btn-reset btn">Reset</span>
                     </span>
                         </div>
                     </form>
                 </div>
             </div>
-            <div  class="login-wrap forgot-pas-wrap flex inactive">
-                <i class="forgot-pas-arrow-back btn">
+            <div id="forgotPass" class="login-wrap forgot-pas-wrap flex inactive">
+                <i id="btnReturnForm" class="forgot-pas-arrow-back btn">
                     <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0"
@@ -89,6 +89,6 @@
         </section>
     </div>
 </main>
-<script src="js/main.js"></script>
+<script src="/dist/js/main.min.js"></script>
 </body>
 </html>
