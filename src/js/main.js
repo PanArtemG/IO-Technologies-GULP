@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
     const DBUsers = [];
 
     const mainForm = document.getElementById('mainForm');
@@ -57,8 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         forgotPass.classList.toggle('inactive')
     }
 
-    btnResetPass.addEventListener('click', toggleForm)
+    btnResetPass.addEventListener('click', toggleForm);
 
-    btnReturnForm.addEventListener('click', toggleForm)
-});
+    btnReturnForm.addEventListener('click', toggleForm);
 
