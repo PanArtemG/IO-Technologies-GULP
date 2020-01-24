@@ -17,45 +17,72 @@
             </a>
             <p class="support-instructions">Get how-to help and instructions or specific features in </p>
             <div class="support-btn-wrap">
-                <div class="support-btn">
+                <div class="support-btn btn">
                     <span class="support-btn-text">Help center</span>
                 </div>
                 <span>or</span>
-                <div class="support-btn">
+                <div class="support-btn btn">
                     <span class="support-btn-text">Support</span>
                 </div>
             </div>
         </section>
         <section class="login sign-login-section section flex">
-            <div class="login-wrap flex">
+            <div  class="login-wrap flex">
                 <h1 class="login-title login-item">Welcome back</h1>
                 <span class="login-subtitle login-item base-color">Sign in to continue to IO Technologies.</span>
                 <div class="login-form-wrap">
-                    <form class="form flex">
-                        <input type="email" class="form-input login-item" autocomplete="off"
-                               aria-describedby="emailHelp"
-                               placeholder="Email address">
-                        <input type="password" class="form-input login-item" id="exampleInputPassword1"
-                               autocomplete="off"
-                               placeholder="Password">
-                        <button type="submit" class="btn login-btn login-item">LOG in
-                            <i class="login-arrow-right">
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        x="0"
-                                        y="0"
-                                        fill="white"
-                                        enable-background="new 0 0 512 512"
-                                        version="1.1"
-                                        viewBox="0 0 512 512"
-                                >
-                                    <path d="M508.875 248.458l-160-160c-3.063-3.042-7.615-3.969-11.625-2.313a10.655 10.655 0 00-6.583 9.854v21.333a10.66 10.66 0 003.125 7.542l109.792 109.792H10.667A10.662 10.662 0 000 245.333v21.333a10.66 10.66 0 0010.667 10.667h432.917L333.792 387.125c-2 2-3.125 4.708-3.125 7.542V416c0 4.313 2.594 8.208 6.583 9.854a10.664 10.664 0 0011.625-2.312l160-160c4.167-4.167 4.167-10.917 0-15.084z"></path>
-                                </svg>
-                            </i>
-                        </button>
-                        <span class="login-reset_pass login-item base-color">
-                        Forgot your password? <span class="login-btn-reset">Reset</span>
+                    <form action="">
+                        <div class="form-login-wrap flex">
+                            <input type="email" class="form-input login-item" autocomplete="off"
+                                   aria-describedby="emailHelp"
+                                   placeholder="Email address">
+                            <input type="password" class="form-input login-item" id="exampleInputPassword1"
+                                   autocomplete="off"
+                                   placeholder="Password">
+                            <button type="submit" class="btn login-btn login-item">LOG in
+                                <i class="login-arrow-right">
+                                    <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            x="0"
+                                            y="0"
+                                            fill="white"
+                                            enable-background="new 0 0 512 512"
+                                            version="1.1"
+                                            viewBox="0 0 512 512"
+                                    >
+                                        <path d="M508.875 248.458l-160-160c-3.063-3.042-7.615-3.969-11.625-2.313a10.655 10.655 0 00-6.583 9.854v21.333a10.66 10.66 0 003.125 7.542l109.792 109.792H10.667A10.662 10.662 0 000 245.333v21.333a10.66 10.66 0 0010.667 10.667h432.917L333.792 387.125c-2 2-3.125 4.708-3.125 7.542V416c0 4.313 2.594 8.208 6.583 9.854a10.664 10.664 0 0011.625-2.312l160-160c4.167-4.167 4.167-10.917 0-15.084z"></path>
+                                    </svg>
+                                </i>
+                            </button>
+                            <span class="login-reset_pass login-item base-color">
+                        Forgot your password? <span class="login-btn-reset btn">Reset</span>
                     </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div  class="login-wrap forgot-pas-wrap flex inactive">
+                <i class="forgot-pas-arrow-back btn">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0"
+                            y="0"
+                            fill="white"
+                            version="1.1"
+                            viewBox="0 0 512 512"
+                    >
+                        <path d="M501.333 245.333H36.417l141.792-141.792c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-160 160c-4.167 4.167-4.167 10.917 0 15.083l160 160a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083L36.417 266.667h464.917c5.896 0 10.667-4.771 10.667-10.667s-4.772-10.667-10.668-10.667z"></path>
+                    </svg>
+                </i>
+                <h1 class="login-title forgot-title login-item">Forgot password?</h1>
+                <div class="login-form-wrap">
+                    <form action="">
+                        <div class="form-login-wrap flex">
+                            <input type="email" class="form-input forgot-pas-input login-item" autocomplete="off"
+                                   aria-describedby="emailHelp"
+                                   placeholder="Enter your mail address">
+                            <button type="submit" class="btn login-btn login-item">Send Me Instructions</button>
+                        </div>
                     </form>
                 </div>
             </div>
