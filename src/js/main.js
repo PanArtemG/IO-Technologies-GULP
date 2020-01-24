@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ev.preventDefault()
     }));
 
-    btnSubmit.addEventListener('click', (ev => {
+    btnSubmit.addEventListener('click', () => {
         const validationParam = {
             'mailValid': /\w\@\w+\.\w{2,}/,
             'passValid': 8
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         function removeAnimationMail() {
             mailInput.classList.remove('animation-wrong-data')
         }
-
         function removeAnimationPass() {
             passInput.classList.remove('animation-wrong-data')
         }
@@ -49,10 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
             mailInput.value = '';
             passInput.value = '';
         }
-    }))
+    });
 
     function toggleForm(){
-        console.log('toggle');
         const mainFormWrap = document.getElementById('mainFormWrap');
         const forgotPass = document.getElementById('forgotPass');
         mainFormWrap.classList.toggle('inactive')
@@ -62,7 +60,5 @@ document.addEventListener("DOMContentLoaded", () => {
     btnResetPass.addEventListener('click', toggleForm)
 
     btnReturnForm.addEventListener('click', toggleForm)
-
-
 });
 
