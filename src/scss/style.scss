@@ -183,7 +183,7 @@ $base-color: #616983;
   }
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 601px)  {
   .main-container {
     padding-left: 10vw;
   }
@@ -294,7 +294,26 @@ $base-color: #616983;
     top: 30%;
     right: 30%;
   }
+}
 
+
+@media (min-width: 1001px) {
+  .support-logo-link {
+    margin-bottom: 2em;
+  }
+
+  .support-instructions {
+    font-size: .98em;
+    margin-bottom: 1.4em;
+  }
+
+  .support-btn-wrap > span {
+    margin: 0 20px;
+  }
+
+  .support-btn {
+    width: 7.7em;
+  }
 }
 
 
