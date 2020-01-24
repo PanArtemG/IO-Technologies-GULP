@@ -1,4 +1,4 @@
-//@import "./fonts.scss";
+@import "fonts.scss";
 $base-color: #616983;
 
 * {
@@ -154,7 +154,7 @@ $base-color: #616983;
     width: 1.3em;
     height: 1em;
     top: 21%;
-    right: 30%;
+    left: 70%;
   }
 }
 
@@ -165,17 +165,21 @@ $base-color: #616983;
   }
 
   .support-instructions {
-    font-size: .6em;
+    font-size: .55em;
   }
 }
 
 @media (min-width: 801px) and (max-width: 1000px) {
   .support-logo-link {
-    margin-bottom: 3em;;
+    margin-bottom: 2em;
   }
 
   .support-instructions {
-    font-size: .8em;
+    font-size: .75em;
+  }
+
+  .support-btn-wrap {
+    justify-content: center;
   }
 }
 
@@ -224,15 +228,20 @@ $base-color: #616983;
   .support-btn-wrap {
     display: flex;
     align-items: center;
-    font-size: 1.2em;
+    justify-content: center;
+    width: 100%;
+    font-size: 1em;
   }
 
+  .support-btn-wrap > span {
+    font-size: .8em;
+    margin: 0 10px;
+  }
 
   .support-btn {
     text-align: center;
-    margin: 0 15px;
     width: 6em;
-    padding: .4em 0;
+    padding: .6em 0;
     border-radius: 5px;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, .2);
@@ -241,6 +250,7 @@ $base-color: #616983;
   }
 
   .support-btn-text {
+    display: block;
     font-size: 0.6em;
     letter-spacing: 1.3px;
   }
@@ -286,3 +296,14 @@ $base-color: #616983;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
